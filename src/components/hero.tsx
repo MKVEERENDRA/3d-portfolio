@@ -1,47 +1,39 @@
-import { motion } from "framer-motion";
-
-import { ComputersCanvas } from "./canvas";
+import React from "react";
 import { styles } from "../styles";
-import { cn } from "../utils/lib";
+import { ComputersCanvas } from "./canvas";
+import { motion } from "framer-motion";
+import { personalInfo } from "../constants";
 
-// Hero
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={cn(
-          styles.paddingX,
-          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5",
-        )}
+        className={`${styles.paddingX} absolute top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 inset-0`}
       >
-        {/* Title */}
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-5 h-5 rounded-full bg-electric-purple" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        {/* About Me */}
         <div>
-          <h1 className={cn(styles.heroHeadText, "text-white")}>
-            Hi, I'm <span className="text-[#915eff]">Veerendra</span>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm{" "}
+            <span className="text-electric-purple">{personalInfo.name}</span>
           </h1>
-          <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-Blockchain developer(dapp)          </p>
+          <p className={`${styles.heroSubText} text-white-100 mt-2`}>
+            Innovative {personalInfo.role}, <br className="sm:block hidden" />
+            building web and mobile applications
+          </p>
         </div>
       </div>
 
-      {/* Computer Model */}
       <ComputersCanvas />
 
-      {/* Scroll to about section */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-2 bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
+              animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
@@ -55,3 +47,5 @@ Blockchain developer(dapp)          </p>
     </section>
   );
 };
+
+export default Hero;
