@@ -72,7 +72,7 @@ export {
   typescript,
   threejs,
   meta,
-  fv
+  fv,
   shopify,
   starbucks,
   tesla,
