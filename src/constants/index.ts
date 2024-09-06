@@ -55,6 +55,11 @@ export const NAV_LINKS = [
     link: null,
   },
   {
+    id: "resume",
+    title: "Resume",
+    link: "https://lime-careful-beetle-570.mypinata.cloud/ipfs/QmbwapSNPCTzsC4XhTkatAdMumgkAnZz2F1LcZrE7eBNin", // Your resume link
+  },
+  {
     id: "source-code",
     title: "Source Code",
     link: "http://www.github.com/MKVEERENDRA/",
