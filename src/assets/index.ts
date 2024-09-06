@@ -10,6 +10,8 @@ import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import preview from "./preview.png";
 import web from "./web.png";
+import fv from "./favicon.ico"
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -70,6 +72,7 @@ export {
   typescript,
   threejs,
   meta,
+  fv
   shopify,
   starbucks,
   tesla,
