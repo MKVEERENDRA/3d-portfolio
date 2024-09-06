@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { fv,logo, menu, close } from "../assets";
+import { fv, menu, close } from "../assets";
 
 import { NAV_LINKS } from "../constants";
 import { styles } from "../styles";
