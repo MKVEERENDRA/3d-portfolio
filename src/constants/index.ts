@@ -307,72 +307,8 @@ export const PROJECTS = [
     source_code_link: "https://github.com/MKVEERENDRA/",
     live_site_link: "https://github.com/MKVEERENDRA/",
   },
-  {
-    name: "Cybersecurity Dashboard",
-    description:
-      "A web-based cybersecurity dashboard that monitors threats, analyzes vulnerabilities, and provides real-time security insights.",
-    tags: [
-      {
-        name: "security",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project4,
-    source_code_link: "https://github.com/MKVEERENDRA/",
-    live_site_link: "https://github.com/MKVEERENDRA/",
-  },
-  {
-    name: "AI-Powered Fitness App",
-    description:
-      "A web app that uses machine learning algorithms to suggest personalized workout plans based on user data and preferences.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tensorflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project2,
-    source_code_link: "https://github.com/MKVEERENDRA/",
-    live_site_link: "https://github.com/MKVEERENDRA/",
-  },
-  {
-    name: "Smart Contract Auditor",
-    description:
-      "Tool for auditing and analyzing smart contracts for security vulnerabilities and optimization opportunities.",
-    tags: [
-      {
-        name: "solidity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "blockchain",
-        color: "green-text-gradient",
-      },
-      {
-        name: "audit",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project6,
-    source_code_link: "https://github.com/MKVEERENDRA/",
-    live_site_link: "https://github.com/MKVEERENDRA/",
-  },
+ 
+  
 ] as const;
 
 export const SOCIALS = [
