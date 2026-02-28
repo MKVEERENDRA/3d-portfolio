@@ -69,27 +69,19 @@ export const NAV_LINKS = [
 // Services
 export const SERVICES = [
   {
-    title: "Full Stack Web Developer",
+    title: "Smart Contract Auditor",
     icon: web,
   },
   {
-    title: "Blockchain Developer",
+    title: "Blockchain Security Researcher",
     icon: mobile,
   },
   {
-    title: "3D Developer (Three.js)",
-    icon: threejs,
-  },
-  {
-    title: "Cybersecurity Analyst",
+    title: "DeFi Security Specialist",
     icon: backend,
   },
   {
-    title: "AI Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
+    title: "Web3 Developer",
     icon: creator,
   },
 ] as const;
@@ -148,7 +140,7 @@ export const TECHNOLOGIES = [
     name: "docker",
     icon: docker,
   },
-  
+
   {
     name: "AI/ML Frameworks",
     icon: backend,
@@ -158,55 +150,41 @@ export const TECHNOLOGIES = [
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "Full Stack Developer",
-    company_name: "",
+    title: "Smart Contract Security Auditor",
+    company_name: "Sherlock Audit Competition (1st Place)",
     icon: backend,
     iconBg: "#E6DEDD",
-    date: "Jan 2022 - Mar 2022",
+    date: "January 2026",
     points: [
-      "Developing and maintaining web applications using React.js, Node.js, and other related technologies.",
-      "Implementing blockchain solutions and smart contract auditing for decentralized applications.",
-      "Creating 3D web experiences using Three.js to enhance user engagement.",
-      "Conducting security analysis and implementing best practices to secure web applications.",
-      "Collaborating with AI/ML teams to integrate machine learning models into web platforms.",
+      "Won 1st place and $700 prize in Sherlock audit competition for Allbridge Core Yield Protocol",
+      "Identified critical vulnerabilities in DeFi protocol handling cross-chain asset transfers and yield optimization",
+      "Performed comprehensive security analysis including reentrancy, access control, and economic attack vectors",
+      "Delivered detailed vulnerability reports with proof-of-concepts and remediation recommendations",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "",
+    title: "Independent Security Auditor",
+    company_name: "Blockchain Security Researcher",
+    icon: backend,
+    iconBg: "#383E56",
+    date: "2023 - Present",
+    points: [
+      "Conducted smart contract audits for DeFi protocols, identifying vulnerabilities in Solidity codebases",
+      "Performed static and dynamic analysis using Slither, Mythril, Echidna, and custom fuzzing frameworks",
+      "Developed automated security analysis tools and property-based tests for protocol invariant verification",
+      "Specialized in DeFi security including AMMs, lending protocols, and cross-chain bridge vulnerabilities",
+    ],
+  },
+  {
+    title: "Salesforce Developer Intern",
+    company_name: "Salesforce",
     icon: backend,
     iconBg: "#E6DEDD",
-    date: "Jul 2023 - Oct 2023",
+    date: "2021 - 2022",
     points: [
-      "Developed cross-platform mobile applications using React Native.",
-      "Worked closely with UX/UI teams to deliver responsive and intuitive interfaces.",
-      "Participated in code reviews and optimized application performance.",
-      "Integrated blockchain features for secure transactions and data handling.",
-    ],
-  },
-  {
-    title: "Blockchain Developer",
-    company_name: "",
-    icon: backend,
-    iconBg: "#383E56",
-    date: "Dec 2023 - Jan 2024",
-    points: [
-      "Developed a decentralized NFT marketplace and crowdfunding platform.",
-      "Ensured security and efficiency of smart contracts through thorough auditing.",
-      "Collaborated with frontend teams to build secure, user-friendly DApps.",
-    ],
-  },
-  {
-    title: "Cybersecurity Analyst",
-    company_name: "",
-
-    icon: backend,
-    iconBg: "#383E56",
-    date: "March 2024 - Present",
-    points: [
-      "Analyzed security vulnerabilities and implemented cybersecurity protocols.",
-      "Monitored systems for security breaches and responded to incidents.",
-      "Worked with development teams to ensure secure coding practices.",
+      "Spearheaded development of decentralized applications (DApps) and smart contracts on Ethereum and Hyperledger",
+      "Conducted comprehensive smart contract audits, identifying vulnerabilities and ensuring code integrity",
+      "Implemented secure coding practices and vulnerability remediation strategies",
     ],
   },
 ] as const;
@@ -242,83 +220,65 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
-    name: "NFT Marketplace",
+    name: "Advanced Fuzzing Framework",
     description:
-      "A decentralized platform enabling users to mint, buy, sell, and trade NFTs securely and efficiently on the blockchain.",
+      "Built comprehensive fuzzing infrastructure for property-based testing of DeFi protocol invariants with custom mutation strategies to discover edge cases in AMM and lending protocol logic.",
     tags: [
-      {
-        name: "blockchain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "solidity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "web3",
-        color: "pink-text-gradient",
-      },
+      { name: "solidity", color: "blue-text-gradient" },
+      { name: "foundry", color: "green-text-gradient" },
+      { name: "echidna", color: "pink-text-gradient" },
     ],
     image: project1,
-    source_code_link: "https://github.com/MKVEERENDRA/purenfts",
-    live_site_link: "https://purenfts.vercel.app/",
+    source_code_link: "https://github.com/MKVEERENDRA",
+    live_site_link: "https://github.com/MKVEERENDRA",
   },
   {
-    name: "Crowdfunding Platform",
+    name: "DeFi Auditing Suite",
     description:
-      "A secure decentralized crowdfunding platform for startups and creators to raise funds transparently with smart contracts.",
+      "Automated vulnerability detection pipeline for DeFi smart contracts integrating static analysis, symbolic execution, and custom heuristics, achieving 95% accuracy.",
     tags: [
-      {
-        name: "blockchain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "solidity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "defi",
-        color: "pink-text-gradient",
-      },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "slither", color: "green-text-gradient" },
+      { name: "mythril", color: "pink-text-gradient" },
+    ],
+    image: project2,
+    source_code_link: "https://github.com/MKVEERENDRA",
+    live_site_link: "https://github.com/MKVEERENDRA",
+  },
+  {
+    name: "NFT Marketplace Analysis",
+    description:
+      "Audited NFT marketplace contracts focusing on ownership transfer security and royalty mechanisms. Identified and remediated critical vulnerabilities with 100% code coverage.",
+    tags: [
+      { name: "solidity", color: "blue-text-gradient" },
+      { name: "ethereum", color: "green-text-gradient" },
+      { name: "security", color: "pink-text-gradient" },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/MKVEERENDRA",
+    live_site_link: "https://github.com/MKVEERENDRA",
+  },
+  {
+    name: "Decentralized Crowdfunding",
+    description:
+      "Built a trustless crowdfunding platform with automated fund management and refund logic. Conducted security audit and formal verification of critical protocol invariants.",
+    tags: [
+      { name: "solidity", color: "blue-text-gradient" },
+      { name: "truffle", color: "green-text-gradient" },
+      { name: "auditing", color: "pink-text-gradient" },
     ],
     image: project5,
     source_code_link: "https://github.com/MKVEERENDRA",
-    live_site_link: "https://github.com/MKVEERENDRA/",
+    live_site_link: "https://github.com/MKVEERENDRA",
   },
-  {
-    name: "3D Portfolio Website",
-    description:
-      "A personal portfolio showcasing interactive 3D elements using Three.js, demonstrating skills in web and 3D development.",
-    tags: [
-      {
-        name: "threejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link: "https://github.com/MKVEERENDRA/",
-    live_site_link: "https://github.com/MKVEERENDRA/",
-  },
- 
-  
 ] as const;
 
 export const SOCIALS = [
-  
   {
     name: "LinkedIn",
     icon: linkedin,
     link: "https://www.linkedin.com/in/veerendra-vamshi-821890225/",
   },
-
   {
     name: "GitHub",
     icon: github,
